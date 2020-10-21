@@ -27,89 +27,6 @@ p, h3{
     font-weight: bold;
 }
 
-/* BODY STUFF */
-body {
-    margin: auto;
-    max-width: 1024px;
-}
-.grid {
-    display: grid; 
-    grid-template-areas:  
-    "header 	header 		header"
-    "main 	    main 	    aside"
-    "footer 	footer 		footer";
-    
-    border: 2px solid black;
-}
-
-/* FOOTER STUFF */
-footer{
-    grid-area: footer;
-    background-color: mediumslateblue;
-    border: var(--content-border);
-    height: 4rem;
-    text-align: center;
-    font-size: 1.5rem;
-}
-footer span{
-    padding: 1rem;
-    display: block;
-}
-
-
-/* ASIDE STUFF */
-aside{
-    grid-area: aside;
-    background-color: rgb(157, 207, 157);
-    border: var(--content-border);
-    text-align: center;
-}
-aside h2{
-    padding: 0.5rem;
-}
-aside ul li ol{
-    margin-bottom:  1rem;
-}
-aside ul li ol li:nth-child(even){
-    background: rgb(195, 240, 255);
-}
-aside ul li ol li:nth-child(odd){
-    background: rgb(230, 224, 255);
-}
-
-/* MAIN STUFF*/
-main{
-    grid-area: main;
-    border: var(--content-border);
-    background-color: rgb(236, 224, 113);
-    padding: 2rem;
-}
-main h2, main .subtext, article, aside ul{
-    padding: 2rem;
-    display: inline-block;
-    border: var(--content-border);
-    background-color: var(--content-bg-color);
-}
-main .subtext, main h2{
-    margin: 2%;
-}
-main .subtext{
-    min-height: 10rem;
-}
-main article{
-    display: inline-block;
-    width: 46%;
-    margin: 2%;
-    height: 25rem;
-    overflow: hidden;
-    vertical-align: top;
-}
-main article img {
-    display: block;
-    width: 100%;
-    margin: 1rem auto; 
-}
-
 /* HEADER STUFF */
 
 header{
@@ -151,6 +68,89 @@ header a:hover, a#top-right-link:hover{
 }
 header nav{
     flex-grow: 1; /*Make nav fill remaining space of parent*/
+}
+
+
+/* BODY STUFF */
+body {
+    margin: auto;
+    max-width: 1024px;
+}
+.grid {
+    display: grid; 
+    grid-template-areas:  
+    "header 	header 		header"
+    "main 	    main 	    aside"
+    "footer 	footer 		footer";
+    
+    border: 2px solid black;
+}
+
+/* MAIN STUFF*/
+main{
+    grid-area: main;
+    border: var(--content-border);
+    background-color: rgb(236, 224, 113);
+    padding: 2rem;
+}
+main h2, main .subtext, article, aside ul{
+    padding: 2rem;
+    display: inline-block;
+    border: var(--content-border);
+    background-color: var(--content-bg-color);
+}
+main .subtext, main h2{
+    margin: 2%;
+}
+main .subtext{
+    min-height: 10rem;
+}
+main article{
+    display: inline-block;
+    width: 46%;
+    margin: 2%;
+    height: 25rem;
+    overflow: hidden;
+    vertical-align: top;
+}
+main article img {
+    display: block;
+    width: 100%;
+    margin: 1rem auto; 
+}
+
+/* ASIDE STUFF */
+aside{
+    grid-area: aside;
+    background-color: rgb(157, 207, 157);
+    border: var(--content-border);
+    text-align: center;
+}
+aside h2{
+    padding: 0.5rem;
+}
+aside ul li ol{
+    margin-bottom:  1rem;
+}
+aside ul li ol li:nth-child(even){
+    background: rgb(195, 240, 255);
+}
+aside ul li ol li:nth-child(odd){
+    background: rgb(230, 224, 255);
+}
+
+/* FOOTER STUFF */
+footer{
+    grid-area: footer;
+    background-color: mediumslateblue;
+    border: var(--content-border);
+    height: 4rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+footer span{
+    padding: 1rem;
+    display: block;
 }
 
 /* LOGIN STUFF*/
